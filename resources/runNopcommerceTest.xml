@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="nopCommerce">
+  <test name="Run on Firefox">
+    <classes>
+      <class name="com.nopcomcomerce.user.Level_03_Base_Object"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
