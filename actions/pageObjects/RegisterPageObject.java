@@ -11,6 +11,7 @@ public class RegisterPageObject extends BasePage {
 	public RegisterPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
+	
 	public void clickRegisterButton() {
 		waitForAllElemetClickable(driver, RegisterPageUI.REGISTER_BUTTON);
 		clickToElement(driver, RegisterPageUI.REGISTER_BUTTON);
