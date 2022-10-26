@@ -4,21 +4,21 @@
   <test name="run on firefox">
   <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory"/>
+      <class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_II"/>
     </classes>
   </test> <!-- Test -->
   
   <test name="run on chrome">
   <parameter name = "browser" value = "chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory"/>
+      <class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_II"/>
     </classes>
   </test> <!-- Test -->
   
   <test name="run on edge">
   <parameter name = "browser" value = "edge"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory"/>
+      <class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_II"/>
     </classes>
   </test> <!-- Test -->
   

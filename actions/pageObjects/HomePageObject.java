@@ -11,14 +11,22 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public void clickRegisterLink() {
+	public RegisterPageObject clickRegisterLink() {
 		waitForAllElemetClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		return new RegisterPageObject(driver);
 	}
 
-	public void clickLoginLink() {
-		// TODO Auto-generated method stub
-		
+	public LoginPageObject clickLoginLink() {
+		waitForAllElemetClickable(driver, HomePageUI.LOGIN_LINK);
+		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		return new LoginPageObject(driver);
+	}
+	
+	public MyAccountPageObject clickMyAccountLink() {
+		waitForAllElemetClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
+		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return new MyAccountPageObject(driver);
 	}
 
 }

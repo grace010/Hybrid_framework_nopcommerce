@@ -2,7 +2,6 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import PageUIs.HomePageUI;
 import PageUIs.LoginPageUI;
 import commons.BasePage;
 
@@ -12,10 +11,9 @@ public class LoginPageObject extends BasePage {
 	  this.driver = driver;
 	 }
 	public HomePageObject clickLoginButton() {
-		waitForAllElemetClickable(driver, HomePageUI.LOGIN_LINK);
+		waitForAllElemetClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getHomePage(driver);
-		
+		return new HomePageObject(driver);
 	}
 	public String getErrorEmailMessage() {
 		waitforElementVisible(driver, LoginPageUI.ERROR_EMAIL_MESSAGE);
