@@ -10,16 +10,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.Nopcommerce.portal.UserHomePageObject;
+import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 
 public class Level_03_Base_Object_01_Register {
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
 	String emailAddress;
 	int rand = random();
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName = "Grace", lastName = "Tran", password = "123456";
 
 	@BeforeClass
@@ -27,8 +27,8 @@ public class Level_03_Base_Object_01_Register {
 
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
+		homePage = new UserHomePageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		driver.get("https://demo.nopcommerce.com/");
 		emailAddress = rand + "@gmail.com";
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

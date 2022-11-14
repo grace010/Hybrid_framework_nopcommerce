@@ -15,6 +15,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.Nopcommerce.portal.UserAddressPageObject;
+import pageObjects.Nopcommerce.portal.UserCustomerInfoPageObject;
+import PageUIs.nopcommerce.user.BasePageUI;
+
 public class BasePage {
 	Alert alert;
 
@@ -324,6 +328,20 @@ public class BasePage {
 		WebDriverWait explicitWait = new WebDriverWait(driver, timeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
+	
+	public UserAddressPageObject clickAddressLink(WebDriver driver) {
+		waitForAllElemetClickable(driver, BasePageUI.ADDRESSES);
+		clickToElement(driver, BasePageUI.ADDRESSES);
+		return new UserAddressPageObject(driver);
+	}
+	
+	public UserCustomerInfoPageObject clickCustomerInfoLink(WebDriver driver) {
+		waitForAllElemetClickable(driver, BasePageUI.CUSTOMER_INFO);
+		clickToElement(driver, BasePageUI.CUSTOMER_INFO);
+		return new UserCustomerInfoPageObject(driver);
+	}
+
+	
 
 	private long timeout = 30;
 

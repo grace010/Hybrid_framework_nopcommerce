@@ -11,16 +11,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.Nopcommerce.portal.UserHomePageObject;
+import pageObjects.Nopcommerce.portal.UserLoginPageObject;
+import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_II{
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
-	private HomePageObject homePage;
-	private LoginPageObject loginPage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserLoginPageObject loginPage;
+	private UserRegisterPageObject registerPage;
 	String emailAdressFake = random()+ "@gmail.com";
 	
 	@BeforeClass
@@ -29,7 +29,7 @@ public class Level_06_Page_Generator_Manager_II{
 		driver = new FirefoxDriver();
 		
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		registerPage = homePage.clickRegisterLink();
 		registerPage.inputFirstNameTextBox("grace");
 	

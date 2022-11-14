@@ -11,19 +11,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.MyAccountPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
+import commons.PageGeneratorManager;
+import pageObjects.Nopcommerce.portal.UserCustomerInfoPageObject;
+import pageObjects.Nopcommerce.portal.UserHomePageObject;
+import pageObjects.Nopcommerce.portal.UserLoginPageObject;
+import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_III{
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
-	private HomePageObject homePage;
-	private LoginPageObject loginPage;
-	private RegisterPageObject registerPage;
-	private MyAccountPageObject myAccountPage;
+	private UserHomePageObject homePage;
+	private UserLoginPageObject loginPage;
+	private UserRegisterPageObject registerPage;
+	private UserCustomerInfoPageObject myAccountPage;
 	String emailAdressFake = random()+ "@gmail.com";
 	
 	@BeforeClass

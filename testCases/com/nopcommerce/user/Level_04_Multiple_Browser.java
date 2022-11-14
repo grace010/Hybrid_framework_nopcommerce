@@ -12,16 +12,16 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.Nopcommerce.portal.UserHomePageObject;
+import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 
 public class Level_04_Multiple_Browser extends BaseTest{
 	
 	WebDriver driver;
 	String emailAddress;
 	int rand = random();
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName = "Grace", lastName = "Tran", password = "123456";
 	
 	@Parameters("browser")
@@ -30,8 +30,8 @@ public class Level_04_Multiple_Browser extends BaseTest{
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver) ;
-		registerPage = new RegisterPageObject(driver);
+		homePage = new UserHomePageObject(driver) ;
+		registerPage = new UserRegisterPageObject(driver);
 		emailAddress = rand + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}

@@ -10,16 +10,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.Nopcommerce.portal.UserHomePageObject;
+import pageObjects.Nopcommerce.portal.UserLoginPageObject;
+import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_I{
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
-	private HomePageObject homePage;
-	private LoginPageObject loginPage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserLoginPageObject loginPage;
+	private UserRegisterPageObject registerPage;
 	String emailAdressFake = random()+ "@gmail.com";
 	@BeforeClass
 	public void beforeClass() {
@@ -27,9 +27,9 @@ public class Level_06_Page_Generator_Manager_I{
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		homePage.clickRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.inputFirstNameTextBox("grace");
 	
 		registerPage.inputLastNameTextBox("tran");
@@ -44,14 +44,14 @@ public class Level_06_Page_Generator_Manager_I{
 		
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		registerPage.clickToLogoutLink();
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		
 	}
 
 	@Test
 	public void Login_TC_01_EmptyData() {	
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.clickLoginButton();
 		Assert.assertEquals(loginPage.getErrorEmailMessage(), "Please enter your email");
 	}
@@ -59,7 +59,7 @@ public class Level_06_Page_Generator_Manager_I{
 	@Test
 	public void Login_TC_02_InvalidEmail() {
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputEmailTextbox("1234");
 		loginPage.clickLoginButton();
 		Assert.assertEquals(loginPage.getErrorEmailMessage(), "Wrong email");
@@ -68,7 +68,7 @@ public class Level_06_Page_Generator_Manager_I{
 	@Test
 	public void Login_TC_03_EmailNotRegister() {
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputEmailTextbox("1234@gmail.com");
 		loginPage.clickLoginButton();
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class = 'message-error validation-summary-errors']")).getText(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
@@ -78,7 +78,7 @@ public class Level_06_Page_Generator_Manager_I{
 	@Test
 	public void Login_TC_04_BlankPassword() {
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputEmailTextbox(emailAdressFake);
 		loginPage.clickLoginButton();
 		Assert.assertEquals(loginPage.getErrorEmailPasswordMessaage(),"Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
@@ -88,7 +88,7 @@ public class Level_06_Page_Generator_Manager_I{
 	@Test
 	public void Login_TC_05_WrongPassword() {
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputEmailTextbox(emailAdressFake);
 		loginPage.inputPasswordTextbox("1234");
 		loginPage.clickLoginButton();
@@ -100,7 +100,7 @@ public class Level_06_Page_Generator_Manager_I{
 	@Test
 	public void Login_TC_06_LoginSuccess() {
 		homePage.clickLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputEmailTextbox(emailAdressFake);
 		loginPage.inputPasswordTextbox("123456");
 		loginPage.clickLoginButton();
