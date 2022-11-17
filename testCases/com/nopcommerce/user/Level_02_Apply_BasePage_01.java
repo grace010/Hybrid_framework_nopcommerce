@@ -41,10 +41,10 @@ public class Level_02_Apply_BasePage_01 {
 
 	@Test
 	public void Register_TC_01_EmptyData() {
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");
 
-		basePage.waitForAllElemetClickable(driver, "//button[@id = 'register-button']");
+		basePage.waitForAllElementClickable(driver, "//button[@id = 'register-button']");
 		basePage.clickToElement(driver, "//button[@id ='register-button']");
 
 		Assert.assertEquals(basePage.getElementText(driver, "//span[@id = 'FirstName-error']"),
@@ -65,7 +65,7 @@ public class Level_02_Apply_BasePage_01 {
 
 	@Test
 	public void Register_TC_02_InvalidEmail() {
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");
 		basePage.sendkeyToElement(driver, "//input[@id='Email']", "Email@@");
 		
@@ -82,7 +82,7 @@ public class Level_02_Apply_BasePage_01 {
 	@Test
 	public void Register_TC_03_RegisterSuccess() {
 
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");
 		
 		basePage.sendkeyToElement(driver, "//input[@id='FirstName']", "Grace");
@@ -112,7 +112,7 @@ public class Level_02_Apply_BasePage_01 {
 
 	@Test
 	public void Register_TC_04_RegisterEmailExist() {
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");
 		basePage.sendkeyToElement(driver, "//input[@id='FirstName']", "Grace");
 		basePage.sendkeyToElement(driver, "//input[@id='LastName']", "Tran");
@@ -131,7 +131,7 @@ public class Level_02_Apply_BasePage_01 {
 
 	@Test
 	public void Register_TC_05_PasswordInvalid() {
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");
 		basePage.sendkeyToElement(driver, "//input[@id='Password']", "1234");
 		basePage.clickToElement(driver, "//button[@id ='register-button']");
@@ -142,7 +142,7 @@ public class Level_02_Apply_BasePage_01 {
 	@Test
 	public void Register_TC_06_PasswordNotMatch() {
 		
-		basePage.waitForAllElemetClickable(driver, "//a[@class ='ico-register']");
+		basePage.waitForAllElementClickable(driver, "//a[@class ='ico-register']");
 		basePage.clickToElement(driver, "//a[@class ='ico-register']");	
 		basePage.sendkeyToElement(driver, "//input[@id='Password']", "123456");
 		basePage.sendkeyToElement(driver, "//input[@id='ConfirmPassword']", "12345");

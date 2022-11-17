@@ -13,7 +13,7 @@ public class AdminLoginPageObject  extends BasePage {
 	 }
 	 
 	 public AdminDashboardPageObject clickLoginButton() {
-			waitForAllElemetClickable(driver, AdminLoginPageUI.LOGIN_BUTTON);
+			waitForAllElementClickable(driver, AdminLoginPageUI.LOGIN_BUTTON);
 			clickToElement(driver, AdminLoginPageUI.LOGIN_BUTTON);
 			return new AdminDashboardPageObject(driver);
 		}
