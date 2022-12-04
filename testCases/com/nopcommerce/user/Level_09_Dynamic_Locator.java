@@ -29,7 +29,7 @@ public class Level_09_Dynamic_Locator{
 	
 	String emailAdressFake = random() + "@gmail.com";
 
-	@BeforeClass
+	@BeforeClass 
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();

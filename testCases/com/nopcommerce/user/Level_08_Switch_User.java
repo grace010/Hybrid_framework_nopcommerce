@@ -22,7 +22,7 @@ public class Level_08_Switch_User{
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
 	private UserHomePageObject userHomePage;
-	private UserLoginPageObject userLoginPage;
+	private UserLoginPageObject userLoginPage; 
 	private UserRegisterPageObject userRegisterPage;
 	private AdminLoginPageObject adminLoginPage;
 	private AdminDashboardPageObject adminHomePage;

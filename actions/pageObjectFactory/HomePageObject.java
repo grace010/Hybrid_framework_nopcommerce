@@ -14,6 +14,7 @@ public class HomePageObject extends BasePageFactory {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 
 	@FindBy(xpath = "//a[@class ='ico-register']")
 	private WebElement registerLink;

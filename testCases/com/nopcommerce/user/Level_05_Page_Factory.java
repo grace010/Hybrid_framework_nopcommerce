@@ -1,6 +1,7 @@
 package com.nopcommerce.user;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,19 +18,16 @@ import pageObjectFactory.RegisterPageObject;
 
 
 public class Level_05_Page_Factory extends BaseTest{
-	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
 	private HomePageObject homePage;
 	private LoginPageObject loginPage;
 	private RegisterPageObject registerPage;
 	String emailAddressRandom = random() + "@gmail.com";
 	 
-	@Parameters("browser")
-	@BeforeClass  
-	
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
-		driver.get("https://demo.nopcommerce.com/");
+	@Parameters({"browser","url"})
+	@BeforeClass   
+	public void beforeClass(String browserName, String appUrl) {
+		driver = getBrowserDriver(browserName, appUrl);
 		homePage = new HomePageObject(driver);
 		homePage.clickRegisterLink();
 		registerPage = new RegisterPageObject(driver);
@@ -114,7 +112,7 @@ public class Level_05_Page_Factory extends BaseTest{
 	
 	@AfterClass
 	public void afterClass() {
-		//driver.quit();
+		driver.quit();
 	}
 }
 
