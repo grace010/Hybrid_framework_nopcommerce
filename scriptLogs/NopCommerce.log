@@ -1,0 +1,380 @@
+[INFO ] [2022-12-05 22:46:08,878] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 22:46:12,927] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 22:46:13,013] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 22:46:13,103] Register_Step04_Enter to email texbox is '78910@gmail.com'
+[INFO ] [2022-12-05 22:46:13,197] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 22:46:13,283] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 22:46:13,374] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 22:46:15,549] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 22:46:15,602] Open customer infor page
+[INFO ] [2022-12-05 22:46:17,276] Open customer address page
+[INFO ] [2022-12-05 22:46:18,897] Open customer infor page
+[INFO ] [2022-12-05 22:46:19,397] Open reward point page
+[INFO ] [2022-12-05 22:46:20,531] Open customer infor page
+[INFO ] [2022-12-05 22:56:58,825] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 22:57:00,194] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 22:57:00,276] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 22:57:00,352] Register_Step04_Enter to email texbox is '16610@gmail.com'
+[INFO ] [2022-12-05 22:57:00,434] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 22:57:00,525] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 22:57:00,616] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 22:57:01,467] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 22:57:01,510] Open customer infor page
+[INFO ] [2022-12-05 22:57:02,064] Step01_Open customer address page
+[INFO ] [2022-12-05 22:57:02,865] Step02_Open customer infor page
+[INFO ] [2022-12-05 22:57:03,286] Step03_Open reward point page
+[INFO ] [2022-12-05 22:57:04,337] Step04_Open customer infor page
+[INFO ] [2022-12-05 23:06:19,483] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 23:06:22,719] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 23:06:22,824] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 23:06:22,903] Register_Step04_Enter to email texbox is '9230@gmail.com'
+[INFO ] [2022-12-05 23:06:22,982] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 23:06:23,052] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 23:06:23,130] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 23:06:27,648] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 23:06:27,711] Step01_Open customer infor page
+[INFO ] [2022-12-05 23:06:30,390] Step01_Open customer address page
+[INFO ] [2022-12-05 23:06:30,982] Step02_Open customer infor page
+[INFO ] [2022-12-05 23:06:31,499] Step03_Open reward point page
+[INFO ] [2022-12-05 23:06:33,709] Step04_Open customer infor page
+[INFO ] [2022-12-05 23:07:25,669] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 23:07:26,937] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 23:07:27,020] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 23:07:27,112] Register_Step04_Enter to email texbox is '70246@gmail.com'
+[INFO ] [2022-12-05 23:07:27,206] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 23:07:27,290] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 23:07:27,381] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 23:07:28,616] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 23:07:28,665] Step01_Open customer infor page
+[INFO ] [2022-12-05 23:07:30,762] Step01_Open customer address page
+[INFO ] [2022-12-05 23:07:32,070] Step02_Open customer infor page
+[INFO ] [2022-12-05 23:07:32,921] Step03_Open reward point page
+[INFO ] [2022-12-05 23:07:33,715] Step04_Open customer infor page
+[INFO ] [2022-12-05 23:29:00,605] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 23:29:02,042] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 23:29:02,125] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 23:29:02,217] Register_Step04_Enter to email texbox is '91583@gmail.com'
+[INFO ] [2022-12-05 23:29:02,309] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 23:29:02,396] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 23:29:02,488] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 23:29:03,268] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 23:29:43,855] Step01_Open customer infor page
+[INFO ] [2022-12-05 23:30:24,426] Step01_Open customer address page
+[INFO ] [2022-12-05 23:31:41,513] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 23:31:42,484] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 23:31:42,576] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 23:31:42,667] Register_Step04_Enter to email texbox is '90010@gmail.com'
+[INFO ] [2022-12-05 23:31:42,760] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 23:31:42,848] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 23:31:42,931] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 23:31:43,706] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 23:32:24,293] Step01_Open customer infor page
+[INFO ] [2022-12-05 23:33:04,863] Step01_Open customer address page
+[INFO ] [2022-12-05 23:41:14,919] Register_Step01_Open reigster page
+[INFO ] [2022-12-05 23:41:17,250] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-05 23:41:17,341] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-05 23:41:17,433] Register_Step04_Enter to email texbox is '71474@gmail.com'
+[INFO ] [2022-12-05 23:41:17,525] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-05 23:41:17,607] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-05 23:41:17,688] Register_Step07_Click to Register button
+[INFO ] [2022-12-05 23:41:18,520] Register_Step08_Verify Register success
+[INFO ] [2022-12-05 23:41:18,568] Step01_Open customer infor page
+[INFO ] [2022-12-05 23:41:19,052] Step01_Open customer address page
+[INFO ] [2022-12-05 23:41:19,512] Step02_Open customer infor page
+[INFO ] [2022-12-05 23:41:19,880] Step03_Open reward point page
+[INFO ] [2022-12-05 23:41:20,394] Step04_Open customer infor page
+[INFO ] [2022-12-06 21:44:25,448] Register_Step01_Open reigster page
+[INFO ] [2022-12-06 21:44:26,556] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-06 21:44:26,639] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-06 21:44:26,731] Register_Step04_Enter to email texbox is '96765@gmail.com'
+[INFO ] [2022-12-06 21:44:26,829] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-06 21:44:26,908] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-06 21:44:26,990] Register_Step07_Click to Register button
+[INFO ] [2022-12-06 21:44:27,860] Register_Step08_Verify Register success
+[INFO ] [2022-12-06 21:44:27,919] Step01_Open customer infor page
+[INFO ] [2022-12-06 21:44:28,414] Step01_Open customer address page
+[INFO ] [2022-12-06 21:44:28,884] Step02_Open customer infor page
+[INFO ] [2022-12-06 21:44:29,334] Step03_Open reward point page
+[INFO ] [2022-12-06 21:44:31,305] Step04_Open customer infor page
+[INFO ] [2022-12-08 22:10:20,081] Register_Step01_Open reigster page
+[INFO ] [2022-12-08 22:10:21,499] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-08 22:10:21,591] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-08 22:10:21,686] Register_Step04_Enter to email texbox is '62143@gmail.com'
+[INFO ] [2022-12-08 22:10:21,779] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-08 22:10:21,865] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-08 22:10:21,949] Register_Step07_Click to Register button
+[INFO ] [2022-12-08 22:10:22,808] Register_Step08_Verify Register success
+[INFO ] [2022-12-08 22:10:22,865] Step01_Open customer infor page
+[INFO ] [2022-12-08 22:10:23,439] Step01_Open customer address page
+[INFO ] [2022-12-08 22:10:24,253] Step02_Open customer infor page
+[INFO ] [2022-12-08 22:10:24,684] Step03_Open reward point page
+[INFO ] [2022-12-08 22:10:26,009] Step04_Open customer infor page
+[INFO ] [2022-12-08 22:11:09,381] Register_Step01_Open reigster page
+[INFO ] [2022-12-08 22:11:10,747] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-08 22:11:10,849] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-08 22:11:10,939] Register_Step04_Enter to email texbox is '27042@gmail.com'
+[INFO ] [2022-12-08 22:11:11,033] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-08 22:11:11,122] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-08 22:11:11,213] Register_Step07_Click to Register button
+[INFO ] [2022-12-08 22:11:12,071] Register_Step08_Verify Register success
+[INFO ] [2022-12-08 22:11:12,192] Step01_Open customer infor page
+[INFO ] [2022-12-08 22:11:12,783] Step01_Open customer address page
+[INFO ] [2022-12-08 22:11:13,328] Step02_Open customer infor page
+[INFO ] [2022-12-08 22:11:13,708] Step03_Open reward point page
+[INFO ] [2022-12-08 22:11:15,932] Step04_Open customer infor page
+[INFO ] [2022-12-08 22:27:21,134] Register_Step01_Open reigster page
+[INFO ] [2022-12-08 22:27:21,907] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-08 22:27:21,998] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-08 22:27:22,090] Register_Step04_Enter to email texbox is '70807@gmail.com'
+[INFO ] [2022-12-08 22:27:22,187] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-08 22:27:22,270] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-08 22:27:22,360] Register_Step07_Click to Register button
+[INFO ] [2022-12-08 22:27:23,154] Register_Step08_Verify Register success
+[INFO ] [2022-12-08 22:27:23,267] Step01_Open customer infor page
+[INFO ] [2022-12-08 22:27:23,791] Step01_Open customer address page
+[INFO ] [2022-12-08 22:27:24,282] Step02_Open customer infor page
+[INFO ] [2022-12-08 22:27:24,707] Step03_Open reward point page
+[INFO ] [2022-12-08 22:27:25,214] Step04_Open customer infor page
+[INFO ] [2022-12-08 22:27:57,032] Register_Step01_Open reigster page
+[INFO ] [2022-12-08 22:27:58,297] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-08 22:27:58,381] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-08 22:27:58,475] Register_Step04_Enter to email texbox is '12112@gmail.com'
+[INFO ] [2022-12-08 22:27:58,565] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-08 22:27:58,643] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-08 22:27:58,725] Register_Step07_Click to Register button
+[INFO ] [2022-12-08 22:28:00,160] Register_Step08_Verify Register success
+[INFO ] [2022-12-08 22:28:00,269] Step01_Open customer infor page
+[INFO ] [2022-12-08 22:28:00,960] Step01_Open customer address page
+[INFO ] [2022-12-08 22:28:01,477] Step02_Open customer infor page
+[INFO ] [2022-12-08 22:28:01,923] Step03_Open reward point page
+[INFO ] [2022-12-08 22:28:02,411] Step04_Open customer infor page
+[INFO ] [2022-12-09 21:13:28,439] Register_Step01_Open reigster page
+[INFO ] [2022-12-09 21:13:29,652] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-09 21:13:29,741] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-09 21:13:29,831] Register_Step04_Enter to email texbox is '50138@gmail.com'
+[INFO ] [2022-12-09 21:13:29,925] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-09 21:13:30,014] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-09 21:13:30,102] Register_Step07_Click to Register button
+[INFO ] [2022-12-09 21:13:31,101] Register_Step08_Verify Register success
+[INFO ] [2022-12-09 21:13:31,151] Step01_Open customer infor page
+[INFO ] [2022-12-09 21:13:31,776] Step01_Open customer address page
+[INFO ] [2022-12-09 21:13:33,080] Step02_Open customer infor page
+[INFO ] [2022-12-09 21:13:33,590] Step03_Open reward point page
+[INFO ] [2022-12-09 21:13:35,818] Step04_Open customer infor page
+[INFO ] [2022-12-13 22:43:41,885] Register_Step01_Open reigster page
+[INFO ] [2022-12-13 22:43:42,595] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-13 22:43:43,271] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:35:13,158] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 21:35:16,005] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 21:35:16,106] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 21:35:16,194] Register_Step04_Enter to email texbox is '93226@gmail.com'
+[INFO ] [2022-12-16 21:35:16,286] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 21:35:16,375] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 21:35:16,466] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 21:35:19,874] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 21:35:20,092] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:35:21,338] Step01_Open customer address page
+[INFO ] [2022-12-16 21:35:22,063] Step02_Open customer infor page
+[INFO ] [2022-12-16 21:35:23,028] Step03_Open reward point page
+[INFO ] [2022-12-16 21:35:23,656] Step04_Open customer infor page
+[INFO ] [2022-12-16 21:54:38,429] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 21:54:39,431] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 21:54:39,525] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 21:54:39,619] Register_Step04_Enter to email texbox is '87625@gmail.com'
+[INFO ] [2022-12-16 21:54:39,710] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 21:54:39,797] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 21:54:39,891] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 21:54:40,627] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 21:54:40,746] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:54:41,180] Step01_Open customer address page
+[INFO ] [2022-12-16 21:54:41,631] Step02_Open customer infor page
+[INFO ] [2022-12-16 21:54:41,982] Step03_Open reward point page
+[INFO ] [2022-12-16 21:54:42,442] Step04_Open customer infor page
+[INFO ] [2022-12-16 21:56:06,520] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:56:24,927] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:58:18,618] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 21:58:19,716] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 21:58:19,813] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 21:58:19,897] Register_Step04_Enter to email texbox is '11426@gmail.com'
+[INFO ] [2022-12-16 21:58:19,997] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 21:58:20,074] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 21:58:20,155] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 21:58:20,891] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 21:58:20,991] Step01_Open customer infor page
+[INFO ] [2022-12-16 21:58:21,488] Step01_Open customer address page
+[INFO ] [2022-12-16 21:58:21,966] Step02_Open customer infor page
+[INFO ] [2022-12-16 21:58:22,331] Step03_Open reward point page
+[INFO ] [2022-12-16 21:58:22,780] Step04_Open customer infor page
+[INFO ] [2022-12-16 21:59:49,533] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 21:59:50,769] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 21:59:50,861] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 21:59:50,953] Register_Step04_Enter to email texbox is '15496@gmail.com'
+[INFO ] [2022-12-16 21:59:51,049] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 21:59:51,134] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 21:59:51,224] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 21:59:52,106] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:12:50,989] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:12:52,224] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:12:52,314] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:12:52,402] Register_Step04_Enter to email texbox is '22405@gmail.com'
+[INFO ] [2022-12-16 22:12:52,497] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:12:52,578] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:12:52,661] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:12:53,504] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:13:06,781] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:13:07,957] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:13:08,051] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:13:08,143] Register_Step04_Enter to email texbox is '20544@gmail.com'
+[INFO ] [2022-12-16 22:13:08,234] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:13:08,322] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:13:08,413] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:13:09,288] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:49:05,350] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:49:07,355] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:49:07,441] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:49:07,537] Register_Step04_Enter to email texbox is '32437@gmail.com'
+[INFO ] [2022-12-16 22:49:07,628] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:49:07,715] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:49:07,798] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:49:08,769] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:49:08,925] OS name = windows 10
+[INFO ] [2022-12-16 22:49:08,925] Driver instance name = firefoxdriver: firefox on windows (3ff43837-d46a-4c83-836f-35faa8fe4242)
+[INFO ] [2022-12-16 22:49:46,561] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:49:47,917] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:49:48,011] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:49:48,102] Register_Step04_Enter to email texbox is '30026@gmail.com'
+[INFO ] [2022-12-16 22:49:48,194] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:49:48,275] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:49:48,356] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:49:49,769] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:50:38,914] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:50:40,141] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:50:40,221] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:50:40,314] Register_Step04_Enter to email texbox is '44451@gmail.com'
+[INFO ] [2022-12-16 22:50:40,423] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:50:40,504] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:50:40,582] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:50:41,379] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:51:06,249] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:51:07,003] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:51:07,087] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:51:07,180] Register_Step04_Enter to email texbox is '99528@gmail.com'
+[INFO ] [2022-12-16 22:51:07,270] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:51:07,350] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:51:07,430] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:51:08,325] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:51:36,660] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:51:38,036] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:51:38,120] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:51:38,213] Register_Step04_Enter to email texbox is '64870@gmail.com'
+[INFO ] [2022-12-16 22:51:38,307] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:51:38,396] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:51:38,481] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:51:39,331] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:51:39,497] OS name = windows 10
+[INFO ] [2022-12-16 22:51:39,497] Driver instance name = firefoxdriver: firefox on windows (612682c8-3ba3-48b0-af19-b0e08551be8b)
+[INFO ] [2022-12-16 22:51:56,064] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:51:57,175] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:51:57,272] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:51:57,364] Register_Step04_Enter to email texbox is '62839@gmail.com'
+[INFO ] [2022-12-16 22:51:57,457] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:51:57,543] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:51:57,629] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:51:58,487] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:52:44,198] Register_Step01_Open reigster page
+[INFO ] [2022-12-16 22:52:45,231] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-16 22:52:45,322] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-16 22:52:45,413] Register_Step04_Enter to email texbox is '45780@gmail.com'
+[INFO ] [2022-12-16 22:52:45,510] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-16 22:52:45,587] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-16 22:52:45,668] Register_Step07_Click to Register button
+[INFO ] [2022-12-16 22:52:46,426] Register_Step08_Verify Register success
+[INFO ] [2022-12-16 22:52:46,582] OS name = windows 10
+[INFO ] [2022-12-16 22:52:46,582] Driver instance name = firefoxdriver: firefox on windows (d4466fec-4bd0-4fec-a356-799c466b4fbb)
+[INFO ] [2022-12-17 13:41:45,733] Register_Step01_Open reigster page
+[INFO ] [2022-12-17 13:41:47,218] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-17 13:41:47,306] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-17 13:41:47,395] Register_Step04_Enter to email texbox is '57749@gmail.com'
+[INFO ] [2022-12-17 13:41:47,492] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-17 13:41:47,574] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-17 13:41:47,649] Register_Step07_Click to Register button
+[INFO ] [2022-12-17 13:41:48,754] Register_Step08_Verify Register success
+[INFO ] [2022-12-17 13:41:48,868] Step01_Open customer infor page
+[INFO ] [2022-12-17 13:41:49,464] Step01_Open customer address page
+[INFO ] [2022-12-17 13:41:50,188] Step02_Open customer infor page
+[INFO ] [2022-12-17 13:41:50,647] Step03_Open reward point page
+[INFO ] [2022-12-17 13:41:51,373] Step04_Open customer infor page
+[INFO ] [2022-12-17 13:41:51,759] OS name = windows 10
+[INFO ] [2022-12-17 13:41:51,759] Driver instance name = firefoxdriver: firefox on windows (3ad6218a-63c2-4e8d-8627-ee332a1566e2)
+[INFO ] [2022-12-17 14:09:15,192] Register_Step01_Open reigster page
+[INFO ] [2022-12-17 14:09:19,299] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-17 14:09:19,382] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-17 14:09:19,473] Register_Step04_Enter to email texbox is '67604@gmail.com'
+[INFO ] [2022-12-17 14:09:19,580] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-17 14:09:19,677] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-17 14:09:19,762] Register_Step07_Click to Register button
+[INFO ] [2022-12-17 14:09:39,865] Step01_Open customer infor page
+[INFO ] [2022-12-17 14:10:20,434] OS name = windows 10
+[INFO ] [2022-12-17 14:10:20,434] Driver instance name = firefoxdriver: firefox on windows (faf3441e-5242-41a1-ad53-a9623162fb04)
+[INFO ] [2022-12-17 14:11:42,202] Register_Step01_Open reigster page
+[INFO ] [2022-12-17 14:11:43,304] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-17 14:11:43,384] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-17 14:11:43,476] Register_Step04_Enter to email texbox is '82109@gmail.com'
+[INFO ] [2022-12-17 14:11:43,571] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-17 14:11:43,659] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-17 14:11:43,751] Register_Step07_Click to Register button
+[INFO ] [2022-12-17 14:11:44,592] Register_Step08_Verify Register success
+[INFO ] [2022-12-17 14:11:44,702] Step01_Open customer infor page
+[INFO ] [2022-12-17 14:11:45,173] Step01_Open customer address page
+[INFO ] [2022-12-17 14:11:45,809] Step02_Open customer infor page
+[INFO ] [2022-12-17 14:11:46,204] Step03_Open reward point page
+[INFO ] [2022-12-17 14:11:46,791] Step04_Open customer infor page
+[INFO ] [2022-12-17 14:11:47,180] OS name = windows 10
+[INFO ] [2022-12-17 14:11:47,180] Driver instance name = firefoxdriver: firefox on windows (08a81b78-ee3f-40a0-a794-18b9b02d6387)
+[INFO ] [2022-12-18 11:18:15,273] Register_Step01_Open reigster page
+[INFO ] [2022-12-18 11:18:20,638] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-18 11:18:20,732] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-18 11:18:21,727] Register_Step04_Enter to email texbox is '31425@gmail.com'
+[INFO ] [2022-12-18 11:18:21,811] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-18 11:18:21,901] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-18 11:18:21,990] Register_Step07_Click to Register button
+[INFO ] [2022-12-18 11:18:26,944] Register_Step08_Verify Register success
+[INFO ] [2022-12-18 11:18:27,053] Step01_Open customer infor page
+[INFO ] [2022-12-18 11:18:30,226] Step01_Open customer address page
+[INFO ] [2022-12-18 11:18:32,941] Step02_Open customer infor page
+[INFO ] [2022-12-18 11:18:33,540] Step03_Open reward point page
+[INFO ] [2022-12-18 11:18:35,905] Step04_Open customer infor page
+[INFO ] [2022-12-18 11:18:36,728] OS name = windows 10
+[INFO ] [2022-12-18 11:18:36,729] Driver instance name = firefoxdriver: firefox on windows (254def77-5958-4181-b14e-f5d7390b3d4d)
+[INFO ] [2022-12-18 12:11:27,609] Register_Step01_Open reigster page
+[INFO ] [2022-12-18 12:11:29,996] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-18 12:11:30,127] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-18 12:11:31,099] Register_Step04_Enter to email texbox is '22054@gmail.com'
+[INFO ] [2022-12-18 12:11:31,184] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-18 12:11:31,265] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-18 12:11:31,348] Register_Step07_Click to Register button
+[INFO ] [2022-12-18 12:11:35,727] Register_Step08_Verify Register success
+[INFO ] [2022-12-18 12:11:35,831] Step01_Open customer infor page
+[INFO ] [2022-12-18 12:12:17,042] Step01_Open customer infor page
+[INFO ] [2022-12-18 12:12:18,304] Step01_Open customer address page
+[INFO ] [2022-12-18 12:12:18,904] Step02_Open customer infor page
+[INFO ] [2022-12-18 12:12:19,335] Step03_Open reward point page
+[INFO ] [2022-12-18 12:12:19,867] Step04_Open customer infor page
+[INFO ] [2022-12-18 12:12:20,321] OS name = windows 10
+[INFO ] [2022-12-18 12:12:20,321] Driver instance name = firefoxdriver: firefox on windows (577058fc-31ef-42fe-bb85-bfbebd0dd78e)
+[INFO ] [2022-12-18 12:18:12,491] Register_Step01_Open reigster page
+[INFO ] [2022-12-18 12:18:14,289] Register_Step02_Enter to firstname textbox
+[INFO ] [2022-12-18 12:18:14,385] Register_Step03_Enter to lastname textbox
+[INFO ] [2022-12-18 12:18:15,347] Register_Step04_Enter to email texbox is '82163@gmail.com'
+[INFO ] [2022-12-18 12:18:15,429] Register_Step05_Enter to password texbox
+[INFO ] [2022-12-18 12:18:15,519] Register_Step06_Enter to confirm password texbox
+[INFO ] [2022-12-18 12:18:15,595] Register_Step07_Click to Register button
+[INFO ] [2022-12-18 12:18:16,327] Register_Step08_Verify Register success
+[INFO ] [2022-12-18 12:18:16,438] Step01_Open customer infor page
+[INFO ] [2022-12-18 12:18:17,054] Step01_Open customer infor page
+[INFO ] [2022-12-18 12:18:17,414] Step01_Open customer address page
+[INFO ] [2022-12-18 12:18:19,531] Step02_Open customer infor page
+[INFO ] [2022-12-18 12:18:19,916] Step03_Open reward point page
+[INFO ] [2022-12-18 12:18:21,537] Step04_Open customer infor page
+[INFO ] [2022-12-18 12:18:21,905] OS name = windows 10
+[INFO ] [2022-12-18 12:18:21,905] Driver instance name = firefoxdriver: firefox on windows (b2ecb6a4-734e-4e5f-a80b-21be5460b0df)

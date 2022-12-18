@@ -41,7 +41,6 @@ public class Level_09_Dynamic_Locator{
 	@Test
 	public void User_01_Register() {
 		homePage = PageGeneratorManager.getHomePage(driver);
-
 		registerPage = homePage.clickRegisterLink();
 		registerPage.inputFirstNameTextBox("grace");
 		registerPage.inputLastNameTextBox("tran");

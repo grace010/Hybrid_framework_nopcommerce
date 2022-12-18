@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import PageUIs.jQuery.UploadFiles.BasePageJqueryUI;
 import PageUIs.nopcommerce.user.BasePageUI;
+import io.qameta.allure.Step;
 import pageObjects.Nopcommerce.portal.UserAddressPageObject;
 import pageObjects.Nopcommerce.portal.UserCustomerInfoPageObject;
 import pageObjects.Nopcommerce.portal.UserRewardPointPageObject;
@@ -52,6 +54,17 @@ public class BasePage {
 
 	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
+	}
+	
+	public Set<Cookie> getAllCookies(WebDriver driver){
+		return driver.manage().getCookies();
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInSection(3);
 	}
 
 	public Alert waitForAlertPresence(WebDriver driver) {
@@ -227,9 +240,17 @@ public class BasePage {
 	public String getElementAttribute(WebDriver driver, String locatorType, String attributeValue) {
 		return getWebElement(driver, locatorType).getAttribute(attributeValue);
 	}
+	
+	public String getElementAttribute(WebDriver driver, String locatorType, String attributeValue, String...restParaValue) {
+		return getWebElement(driver, getDynamicLocator(locatorType, restParaValue)).getAttribute(attributeValue);
+	}
 
 	public String getElementText(WebDriver driver, String locatorType) {
 		return getWebElement(driver, locatorType).getText();
+	}
+	
+	public String getElementText(WebDriver driver, String locatorType, String...restParaValue ) {
+		return getWebElement(driver, getDynamicLocator(locatorType, restParaValue)).getText();
 	}
 
 	public String getElementCssValue(WebDriver driver, String locatorType, String propertyName) {
@@ -440,7 +461,7 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicLocator(locatorType, restParaValue))));
 	}
 	
-	
+	@Step("Open Address page")
 	public UserAddressPageObject clickAddressLink(WebDriver driver) {
 		waitForAllElementClickable(driver, BasePageUI.ADDRESSES);
 		clickToElement(driver, BasePageUI.ADDRESSES);
@@ -453,6 +474,7 @@ public class BasePage {
 		return PageGeneratorManager.getMyAccountPage(driver);
 	}
 	
+	@Step("Open Reward page")
 	public UserRewardPointPageObject clickRewardPointLink(WebDriver driver) {
 		waitForAllElementClickable(driver, BasePageUI.REWARD_POINT);
 		clickToElement(driver, BasePageUI.REWARD_POINT);
@@ -491,6 +513,33 @@ public class BasePage {
 		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_AT_MYACCOUNT_AREA, pageName);
 	}
 	
+	/*
+	 * enter dynamic text box by id
+	 */
+	
+	public void inputTextBoxByID(WebDriver driver, String textBoxID, String value ) {
+		waitforElementVisible(driver, BasePageUI.DYNAMIC_TEXT_BOX_BY_ID, textBoxID);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXT_BOX_BY_ID, value, textBoxID);
+	}
+	
+	/*
+	 * click to dynamic button by text
+	 */
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForAllElementClickable(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+	}
+
+	public void selectByDrpopDownAttributeName(WebDriver driver, String buttonDropDown, String value) {
+		waitForAllElementClickable(driver, BasePageUI.DYNAMIC_DROP_DOWN_BY_ATTRIBUTE, buttonDropDown);
+		selectItembyDefaultDropdown(driver, BasePageUI.DYNAMIC_DROP_DOWN_BY_ATTRIBUTE, value, buttonDropDown);
+	}
+	
+	public String getTextBoxValueByID(WebDriver driver, String textBoxID) {
+		waitforElementVisible(driver, BasePageUI.DYNAMIC_TEXT_BOX_BY_ID, textBoxID);
+		return getElementAttribute(driver, BasePageUI.DYNAMIC_TEXT_BOX_BY_ID, "value", textBoxID);
+	}
+
 	public void overrideImplicitTimeout(WebDriver driver, long timeOut) {
 		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}

@@ -11,6 +11,8 @@ public class GlobalConstants {
 	public static final String BROWSER_LOG_FOLDER = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
+	public static final String REPORT_NG_SCREENSHOT = PROJECT_PATH + File.separator + "ReportNGScreenShots" + File.separator;
+	public static final String EXTENT_PATH = PROJECT_PATH + File.separator + "extentV2" + File.separator;
 	public static final String DB_DEV_URL = "";
 	public static final String DB_DEV_USER = "";
 	public static final String DB_DEV_PASS = "";
@@ -21,6 +23,7 @@ public class GlobalConstants {
 	public static final String SHORT_TIMEOUT = "30";
 	public static final String LONG_TIMEOUT = "30";
 	public static final String RETRY_TEST_FAIL = "";
+	
 
 	
 	
