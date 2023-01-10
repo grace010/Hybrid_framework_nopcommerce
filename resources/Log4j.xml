@@ -35,13 +35,13 @@
 		</layout>
 	</appender>
 
-	<category name="com.nopcommerce.user">
+	<category name="com.wordpress.post">
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />
 		<appender-ref ref="file" />
 		<appender-ref ref="testng" />
-	</category>
+	</category> 
 		
 	<root>
 		<priority value="info" />

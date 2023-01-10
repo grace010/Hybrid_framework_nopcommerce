@@ -378,3 +378,22 @@
 [INFO ] [2022-12-18 12:18:21,537] Step04_Open customer infor page
 [INFO ] [2022-12-18 12:18:21,905] OS name = windows 10
 [INFO ] [2022-12-18 12:18:21,905] Driver instance name = firefoxdriver: firefox on windows (b2ecb6a4-734e-4e5f-a80b-21be5460b0df)
+[INFO ] [2023-01-09 01:15:04,360] Register_Step01_Open reigster page
+[INFO ] [2023-01-09 01:15:05,323] Register_Step02_Enter to firstname textbox
+[INFO ] [2023-01-09 01:15:05,433] Register_Step03_Enter to lastname textbox
+[INFO ] [2023-01-09 01:15:05,519] Register_Step04_Enter to email texbox is '40010@gmail.com'
+[INFO ] [2023-01-09 01:15:05,617] Register_Step05_Enter to password texbox
+[INFO ] [2023-01-09 01:15:05,694] Register_Step06_Enter to confirm password texbox
+[INFO ] [2023-01-09 01:15:05,774] Register_Step07_Click to Register button
+[INFO ] [2023-01-09 01:15:06,433] Register_Step08_Verify Register success
+[INFO ] [2023-01-09 01:15:06,527] Step01_Open customer infor page
+[INFO ] [2023-01-09 01:17:31,168] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-01-09 01:17:31,341] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-01-09 01:17:31,466] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-01-09 01:17:33,633] Click to Post menu link
+[INFO ] [2023-01-09 01:17:34,723] Input value into Post Search box 
+[INFO ] [2023-01-09 01:17:34,851] Click to Search Posts button 
+[INFO ] [2023-01-09 01:17:36,859] Verify title and list search in search page 
+[INFO ] [2023-01-09 01:17:36,979]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-01-09 01:17:37,047] OS name = windows 10
+[INFO ] [2023-01-09 01:17:37,048] Driver instance name = chromedriver: chrome on windows (ee0d01d6a92db36dd368df22ed7ee6c8)
