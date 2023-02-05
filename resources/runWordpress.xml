@@ -13,7 +13,7 @@
 	<!--<parameter name="userUrl" value="http://localhost:8080" />-->
 	<!--<parameter name="browser" value="firefox" />-->
 	<test name="run on firefox">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.wordpress.post.Post_01_Read_Create_Delete_Update" />
 		</classes>

@@ -1,5 +1,6 @@
 package com.nopcommerce.user;
 
+import java.lang.reflect.Method;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
@@ -16,7 +18,8 @@ import pageObjects.Nopcommerce.portal.UserHomePageObject;
 import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.Nopcommerce.portal.UserRewardPointPageObject;
 
-public class Level_14_Log_ReportNG extends BaseTest {
+
+public class Level_15_Attach_V3__Screenshot extends BaseTest {
 	String projectPath = System.getProperty("user.dir");
 	WebDriver driver;
 	private UserHomePageObject homePage;
@@ -35,51 +38,46 @@ public class Level_14_Log_ReportNG extends BaseTest {
 	}
 
 	@Test
-	public void User_01_Register() {
-		log.info("Register_Step01_Open reigster page");
+	public void User_01_Register(Method method) {
 		registerPage = homePage.clickRegisterLink();
 		
-		log.info("Register_Step02_Enter to firstname textbox");
 		registerPage.inputFirstNameTextBox("grace");
 		
-		log.info("Register_Step03_Enter to lastname textbox");
 		registerPage.inputLastNameTextBox("tran");
 		
-		log.info("Register_Step04_Enter to email texbox is '"+emailAdressFake+ "'");
 		registerPage.inputEmailTextBox(emailAdressFake);
 		
-		log.info("Register_Step05_Enter to password texbox");
 		registerPage.inputPasswordTextBox("123456");
 		
-		log.info("Register_Step06_Enter to confirm password texbox");
 		registerPage.inputConfirmPasswordTextBox("123456");
 		
-		log.info("Register_Step07_Click to Register button");
 		registerPage.clickRegisterButton();
 		
-		log.info("Register_Step08_Verify Register success");
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		
+		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration123 completed");
 	}
+
+
+	@Test
+	public void User_02_Switch_Account(Method method) {
 	
-//	@Test
-//	public void User_03_Switch_Account() {
-//		log.info("Step01_Open customer infor page");
-//		customerInforPage = homePage.clickMyAccountLink();
-//		
-//		log.info("Step01_Open customer address page");
-//		addressPage = customerInforPage.clickAddressLink(driver);
-//		
-//		log.info("Step02_Open customer infor page");
-//		customerInforPage = addressPage.clickCustomerInfoLink(driver);
-//		
-//		log.info("Step03_Open reward point page");
-//		rewardPointPage = customerInforPage.clickRewardPointLink(driver);
-//		
-//		log.info("Step04_Open customer infor page");
-//		customerInforPage = rewardPointPage.clickCustomerInfoLink(driver);
-//
-//	}
+		customerInforPage = homePage.clickMyAccountLink();
+		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account1 - Customer info");
+		
+	
+		addressPage = customerInforPage.clickAddressLink(driver);
+		
+		
+		customerInforPage = addressPage.clickCustomerInfoLink(driver);
+		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account2 - Customer info");
+		
+	
+		rewardPointPage = customerInforPage.clickRewardPointLink(driver);
+		
+	
+		customerInforPage = rewardPointPage.clickCustomerInfoLink(driver);
+	
+
+	}
 
 	
 	public int random() {
@@ -91,5 +89,4 @@ public class Level_14_Log_ReportNG extends BaseTest {
 	public void afterClass() {
 		// driver.quit();
 	}
-	
 }

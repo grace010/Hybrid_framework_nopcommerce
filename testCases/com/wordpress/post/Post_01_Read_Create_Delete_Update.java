@@ -24,7 +24,7 @@ public class Post_01_Read_Create_Delete_Update extends BaseTest{
 
 
 	@Parameters({ "browser", "url"})
-	@BeforeClass
+	@BeforeClass 
 	public void beforeClass(String browserName, String adminUrl) {
 		driver = getBrowserDriver(browserName, adminUrl);
 		log.info("Pre - Step_01: Input username into Admin login page");

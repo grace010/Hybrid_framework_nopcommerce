@@ -9,9 +9,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -20,7 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	protected WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
+	String projectPath = GlobalConstants.PROJECT_PATH;
 	protected final Log log;
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
@@ -58,26 +60,36 @@ public class BaseTest {
 	}
 	
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
+		FirefoxOptions options = new FirefoxOptions();
+		ChromeOptions option = new ChromeOptions();
 		switch (browserName) {
 		case "firefox": 
 			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 			//WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+//			FirefoxProfile profile = new FirefoxProfile();
+//			File translate = new File (projectPath + "\\browserExtensions\\simple_translate-2.8.0.xpi");
+//			profile.addExtension(translate);
+//			profile.setAcceptUntrustedCertificates(true);
+//			profile.setAssumeUntrustedCertificateIssuer(false);
+//			options.setProfile(profile);
+			//driver = WebDriverManager.firefoxdriver().capabilities(options).create();
+			driver = new FirefoxDriver(options);
 			break;
 			
 		case "h_firefox": 
-			//System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions options = new FirefoxOptions();
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			//WebDriverManager.firefoxdriver().setup();
+		
 			options.addArguments("-headless");
 			options.addArguments("window-size=1920x1080");
+			//driver = WebDriverManager.firefoxdriver().capabilities(options).create();
 			driver = new FirefoxDriver(options);
 			break;
 			
 		case "chrome":
 			//System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(option);
 			break;
 			
 		case "edge":
@@ -98,6 +110,14 @@ public class BaseTest {
 		return rand.nextInt();
 	}
 
+	public void sleepInSection(long timeInSection) {
+		try {
+			Thread.sleep(timeInSection * 1000);
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
 
 	protected boolean verifyTrue(boolean condition) {
 		boolean pass = true;
@@ -194,7 +214,7 @@ public class BaseTest {
 					cmd = "taskkill /F /FI \"IMAGENAME eq msedgedriver*\"";
 				} else {
 					cmd = "pkill msedgedriver";
-				}
+				} 
 			} else if (driverInstanceName.contains("opera")) {
 				if (osName.contains("window")) {
 					cmd = "taskkill /F /FI \"IMAGENAME eq operadriver*\"";

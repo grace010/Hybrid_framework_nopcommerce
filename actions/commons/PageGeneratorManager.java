@@ -14,7 +14,7 @@ import pageObjects.Nopcommerce.portal.UserRewardPointPageObject;
 public class PageGeneratorManager {
 	public static UserHomePageObject getHomePage(WebDriver driver) {
 		return new UserHomePageObject(driver);
-	}
+	} 
 	
 	public static UserRegisterPageObject geRegisterPage(WebDriver driver) {
 		return new UserRegisterPageObject(driver);

@@ -37,7 +37,7 @@ public class BasePage {
 	}
 
 	public String getCurrentUrl(WebDriver driver) {
-		return driver.getCurrentUrl();
+		return driver.getCurrentUrl(); 
 	}
 
 	public String getPageSourceCode(WebDriver driver) {
@@ -148,7 +148,7 @@ public class BasePage {
 		}
 		else if(locatorType.startsWith("name=")) {
 			by = By.name(locatorType.substring(5));
-		}
+		} 
 		else if(locatorType.startsWith("css=")) {
 			by = By.cssSelector(locatorType.substring(4));
 		}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce">
+<suite name="SauceLab">
 
 	<listeners>
 		<listener class-name="commons.MethodListener" />
@@ -9,13 +9,11 @@
 	<!--<listener class-name="org.uncommons.reportng.HTMLReporter" />-->
 	<!--<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />-->
 	</listeners>
-	<parameter name="url" value="http://localhost:8080/wp-admin" />
-	<!--<parameter name="userUrl" value="http://localhost:8080" />-->
-	<!--<parameter name="browser" value="firefox" />-->
+	<parameter name="url" value="https://www.saucedemo.com/" />
 	<test name="run on firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.wordpress.post.Post_01_Read_Create_Delete_Update" />
+			<class name="com.nopcommerce.user.Level_19_Sort_ASC_DESC" />
 		</classes>
 	</test> <!-- Test -->
 

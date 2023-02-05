@@ -36,7 +36,7 @@ public class AdminPostSeachPO extends BasePage {
 			}
 		}
 		return true;
-		
+
 	}
 
 }

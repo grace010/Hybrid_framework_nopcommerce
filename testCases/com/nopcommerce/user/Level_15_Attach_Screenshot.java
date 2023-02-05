@@ -10,8 +10,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
-
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.Nopcommerce.portal.UserAddressPageObject;
@@ -19,7 +17,7 @@ import pageObjects.Nopcommerce.portal.UserCustomerInfoPageObject;
 import pageObjects.Nopcommerce.portal.UserHomePageObject;
 import pageObjects.Nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.Nopcommerce.portal.UserRewardPointPageObject;
-import reportConfig.ExtentManager;
+
 
 public class Level_15_Attach_Screenshot extends BaseTest {
 	String projectPath = System.getProperty("user.dir");
@@ -41,54 +39,54 @@ public class Level_15_Attach_Screenshot extends BaseTest {
 
 	@Test
 	public void User_01_Register(Method method) {
-		ExtentManager.startTest(method.getName(), "User_01_Register");
-		ExtentManager.getTest().log(LogStatus.INFO, "Register_Step01_Open reigster page");
-		registerPage = homePage.clickRegisterLink();
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step02_Enter to firstname textbox");
-		registerPage.inputFirstNameTextBox("grace");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step03_Enter to lastname textbox");
-		registerPage.inputLastNameTextBox("tran");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step04_Enter to email texbox is '"+emailAdressFake+ "'");
-		registerPage.inputEmailTextBox(emailAdressFake);
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step05_Enter to password texbox");
-		registerPage.inputPasswordTextBox("123456");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step06_Enter to confirm password texbox");
-		registerPage.inputConfirmPasswordTextBox("123456");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step07_Click to Register button");
-		registerPage.clickRegisterButton();
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step08_Verify Register success");
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration123 completed");
-		ExtentManager.endTest();
-	}
-
-
-	@Test
-	public void User_02_Switch_Account(Method method) {
-		ExtentManager.startTest(method.getName(), "User_02_Switch_Account");
-		ExtentManager.getTest().log(LogStatus.INFO, "Step01_Open customer infor page");
-		customerInforPage = homePage.clickMyAccountLink();
-		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account1 - Customer info");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Step01_Open customer address page");
-		addressPage = customerInforPage.clickAddressLink(driver);
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Step02_Open customer infor page");
-		customerInforPage = addressPage.clickCustomerInfoLink(driver);
-		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account2 - Customer info");
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Step03_Open reward point page");
-		rewardPointPage = customerInforPage.clickRewardPointLink(driver);
-		
-		ExtentManager.getTest().log(LogStatus.INFO,"Step04_Open customer infor page");
-		customerInforPage = rewardPointPage.clickCustomerInfoLink(driver);
-		ExtentManager.endTest();
+//		ExtentManager.startTest(method.getName(), "User_01_Register");
+//		ExtentManager.getTest().log(LogStatus.INFO, "Register_Step01_Open reigster page");
+//		registerPage = homePage.clickRegisterLink();
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step02_Enter to firstname textbox");
+//		registerPage.inputFirstNameTextBox("grace");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step03_Enter to lastname textbox");
+//		registerPage.inputLastNameTextBox("tran");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step04_Enter to email texbox is '"+emailAdressFake+ "'");
+//		registerPage.inputEmailTextBox(emailAdressFake);
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step05_Enter to password texbox");
+//		registerPage.inputPasswordTextBox("123456");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step06_Enter to confirm password texbox");
+//		registerPage.inputConfirmPasswordTextBox("123456");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step07_Click to Register button");
+//		registerPage.clickRegisterButton();
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Register_Step08_Verify Register success");
+//		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration123 completed");
+//		ExtentManager.endTest();
+//	}
+//
+//
+//	@Test
+//	public void User_02_Switch_Account(Method method) {
+//		ExtentManager.startTest(method.getName(), "User_02_Switch_Account");
+//		ExtentManager.getTest().log(LogStatus.INFO, "Step01_Open customer infor page");
+//		customerInforPage = homePage.clickMyAccountLink();
+//		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account1 - Customer info");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Step01_Open customer address page");
+//		addressPage = customerInforPage.clickAddressLink(driver);
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Step02_Open customer infor page");
+//		customerInforPage = addressPage.clickCustomerInfoLink(driver);
+//		verifyEquals(customerInforPage.getCustomerInforPageHeader(), "My account2 - Customer info");
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Step03_Open reward point page");
+//		rewardPointPage = customerInforPage.clickRewardPointLink(driver);
+//		
+//		ExtentManager.getTest().log(LogStatus.INFO,"Step04_Open customer infor page");
+//		customerInforPage = rewardPointPage.clickCustomerInfoLink(driver);
+//		ExtentManager.endTest();
 
 	}
 

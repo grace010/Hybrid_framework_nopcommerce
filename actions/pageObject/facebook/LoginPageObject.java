@@ -10,11 +10,11 @@ public class LoginPageObject extends BasePage {
 	public LoginPageObject(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+	 
 	public void clickToCreateNewAccount() {
 		waitforElementVisible(driver, LoginPageUI.CREATE_NEW_ACCOUNT);
 		clickToElement(driver, LoginPageUI.CREATE_NEW_ACCOUNT);
-		
+		 
 	}
 	public boolean verifyEmailAddressIsDisplayed() {
 		waitforElementVisible(driver, LoginPageUI.EMAIL_ADDRESS);
