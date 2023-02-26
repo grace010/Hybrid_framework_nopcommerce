@@ -605,3 +605,5 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2023-01-29 21:03:54,902]  -------------------------- PASSED -------------------------- 
 [INFO ] [2023-01-29 21:03:54,990] OS name = windows 10
 [INFO ] [2023-01-29 21:03:54,990] Driver instance name = firefoxdriver: firefox on windows (1906dfab-52f1-47b3-a2f9-c247edbb9783)
+[INFO ] [2023-02-19 14:30:16,526] OS name = windows 10
+[INFO ] [2023-02-19 14:30:16,527] 

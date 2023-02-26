@@ -13,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -59,9 +58,57 @@ public class BaseTest {
 		return this.driver;
 	}
 	
-	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
+	protected WebDriver getBrowserDriver(String browserName, String EnvName) {
 		FirefoxOptions options = new FirefoxOptions();
 		ChromeOptions option = new ChromeOptions();
+		
+		switch (browserName) {
+		case "firefox": 
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			//WebDriverManager.firefoxdriver().setup();
+//			FirefoxProfile profile = new FirefoxProfile();
+//			File translate = new File (projectPath + "\\browserExtensions\\simple_translate-2.8.0.xpi");
+//			profile.addExtension(translate);
+//			profile.setAcceptUntrustedCertificates(true);
+//			profile.setAssumeUntrustedCertificateIssuer(false);
+//			options.setProfile(profile);
+			//driver = WebDriverManager.firefoxdriver().capabilities(options).create();
+			driver = new FirefoxDriver(options);
+			break;
+			
+		case "h_firefox": 
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+			//WebDriverManager.firefoxdriver().setup();
+		
+			options.addArguments("-headless");
+			options.addArguments("window-size=1920x1080");
+			//driver = WebDriverManager.firefoxdriver().capabilities(options).create();
+			driver = new FirefoxDriver(options);
+			break;
+			
+		case "chrome":
+			//System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(option);
+			break;
+			
+		case "edge":
+			//System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			break;
+		case "":
+			throw new RuntimeException("Browser is invalid");
+		}
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get(getEnvironment(EnvName));
+		return driver;
+	}
+	
+	protected WebDriver getBrowserDriverUrl(String browserName, String appUrl) {
+		FirefoxOptions options = new FirefoxOptions();
+		ChromeOptions option = new ChromeOptions();
+		
 		switch (browserName) {
 		case "firefox": 
 			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
@@ -104,6 +151,29 @@ public class BaseTest {
 		driver.get(appUrl);
 		return driver;
 	}
+	
+	protected String getEnvironment (String EnvName) {
+		String url = null;
+		if(EnvName.equals("dev")) {
+			url = "https://demo.nopcommerce.com/";
+		}
+		else if(EnvName.equals("testing")) {
+			url = "https://tester.test.io/";
+		}
+		else if(EnvName.equals("stating")) {
+			url = "https://demo.nopcommerce.com/";
+		}
+		else if(EnvName.equals("production")) {
+			url = "https://demo.nopcommerce.com/";
+		}
+		else {
+			throw new RuntimeException("please input the correct invironment name");
+		}
+		return url;
+	}
+	
+	
+	
 	
 	protected int fakeFandomData() {
 		Random rand = new Random();
