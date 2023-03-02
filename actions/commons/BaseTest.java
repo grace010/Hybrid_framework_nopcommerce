@@ -174,7 +174,6 @@ public class BaseTest {
 	
 	
 	
-	
 	protected int fakeFandomData() {
 		Random rand = new Random();
 		return rand.nextInt();
