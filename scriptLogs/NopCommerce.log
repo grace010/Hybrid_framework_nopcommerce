@@ -607,3 +607,58 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2023-01-29 21:03:54,990] Driver instance name = firefoxdriver: firefox on windows (1906dfab-52f1-47b3-a2f9-c247edbb9783)
 [INFO ] [2023-02-19 14:30:16,526] OS name = windows 10
 [INFO ] [2023-02-19 14:30:16,527] 
+[INFO ] [2023-03-18 12:11:13,231] OS name = windows 10
+[INFO ] [2023-03-18 12:11:13,231] 
+[INFO ] [2023-03-18 12:11:41,990] OS name = windows 10
+[INFO ] [2023-03-18 12:11:41,990] Driver instance name = firefoxdriver: firefox on windows (441a3f3f-7e3c-444c-9a32-12c4fb9a2bdb)
+[INFO ] [2023-03-18 12:12:20,213] OS name = windows 10
+[INFO ] [2023-03-18 12:12:20,214] Driver instance name = firefoxdriver: firefox on windows (2d7d9f88-26f2-4f78-9f45-3908e88a790f)
+[INFO ] [2023-03-18 12:14:33,046] OS name = windows 10
+[INFO ] [2023-03-18 12:14:33,047] Driver instance name = firefoxdriver: firefox on windows (cb87d772-eb97-4bec-995e-ad208fd9b42e)
+[INFO ] [2023-03-18 12:18:55,325] OS name = windows 10
+[INFO ] [2023-03-18 12:18:55,325] 
+[INFO ] [2023-03-18 12:25:45,470] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-03-18 12:25:45,659] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-03-18 12:25:45,747] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-03-18 12:25:48,630] Click to Post menu link
+[INFO ] [2023-03-18 12:25:49,804] Input value into Post Search box 
+[INFO ] [2023-03-18 12:25:49,882] Click to Search Posts button 
+[INFO ] [2023-03-18 12:25:51,850] Verify title and list search in search page 
+[INFO ] [2023-03-18 12:25:52,007]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-18 12:25:52,079] OS name = windows 10
+[INFO ] [2023-03-18 12:25:52,079] Driver instance name = firefoxdriver: firefox on windows (27a0dd34-9116-426e-b95f-078bfe9c51d9)
+[INFO ] [2023-03-18 12:26:32,263] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-03-18 12:26:32,433] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-03-18 12:26:32,522] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-03-18 12:26:34,479] Click to Post menu link
+[INFO ] [2023-03-18 12:26:35,663] Input value into Post Search box 
+[INFO ] [2023-03-18 12:26:35,751] Click to Search Posts button 
+[INFO ] [2023-03-18 12:26:37,628] Verify title and list search in search page 
+[INFO ] [2023-03-18 12:26:37,744]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-18 12:26:37,833] OS name = windows 10
+[INFO ] [2023-03-18 12:26:37,833] Driver instance name = firefoxdriver: firefox on windows (1aa61bd6-4dd8-408c-9d5d-3cffeb2ee8e9)
+[INFO ] [2023-03-18 15:18:45,915] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-03-18 15:18:46,077] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-03-18 15:18:46,163] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-03-18 15:18:48,262] Click to Post menu link
+[INFO ] [2023-03-18 15:18:49,438] Input value into Post Search box 
+[INFO ] [2023-03-18 15:18:49,522] Click to Search Posts button 
+[INFO ] [2023-03-18 15:18:51,392] Verify title and list search in search page 
+[INFO ] [2023-03-18 15:18:51,442]  -------------------------- PASSED -------------------------- 
+[INFO ] [2023-03-18 15:18:51,515] OS name = windows 10
+[INFO ] [2023-03-18 15:18:51,515] Driver instance name = firefoxdriver: firefox on windows (ba3b6bb4-e0c0-4aa2-905b-d9acce17abc8)
+[INFO ] [2023-03-18 20:21:05,775] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-03-18 20:21:05,960] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-03-18 20:21:06,054] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-03-18 20:21:08,167] Click to Post menu link
+[INFO ] [2023-03-18 20:21:09,337] Input value into Post Search box 
+[INFO ] [2023-03-18 20:21:09,428] Click to Search Posts button 
+[INFO ] [2023-03-18 20:21:10,025] Verify title and list search in search page 
+[INFO ] [2023-03-18 20:21:10,213] OS name = windows 10
+[INFO ] [2023-03-18 20:21:10,214] Driver instance name = firefoxdriver: firefox on windows (7f450fd9-cd83-4fc1-b245-2d5447f7b3ee)
+[INFO ] [2023-03-18 20:21:10,363] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-UABRI8V', ip: '192.168.40.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8464, moz:profile: C:\Users\admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f450fd9-cd83-4fc1-b245-2d5447f7b3ee

@@ -1,0 +1,15 @@
+[INFO ] [2023-03-18 20:21:05,775] Pre - Step_01: Input username into Admin login page
+[INFO ] [2023-03-18 20:21:05,960] Pre - Step_02: Input password into Admin login page
+[INFO ] [2023-03-18 20:21:06,054] Pre - Step_03: Click to into Admin login page
+[INFO ] [2023-03-18 20:21:08,167] Click to Post menu link
+[INFO ] [2023-03-18 20:21:09,337] Input value into Post Search box 
+[INFO ] [2023-03-18 20:21:09,428] Click to Search Posts button 
+[INFO ] [2023-03-18 20:21:10,025] Verify title and list search in search page 
+[INFO ] [2023-03-18 20:21:10,213] OS name = windows 10
+[INFO ] [2023-03-18 20:21:10,214] Driver instance name = firefoxdriver: firefox on windows (7f450fd9-cd83-4fc1-b245-2d5447f7b3ee)
+[INFO ] [2023-03-18 20:21:10,363] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-UABRI8V', ip: '192.168.40.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8464, moz:profile: C:\Users\admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7f450fd9-cd83-4fc1-b245-2d5447f7b3ee

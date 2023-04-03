@@ -15,18 +15,16 @@ public class Post_01_Read_Create_Delete_Update extends BaseTest{
 	private String adminUsername = "automationfc";
 	private String adminPassword = "Yen12345!";
 	private String SearchValue = "Blackpink";
-	private String SearchPostUrl;
+	//private String SearchPostUrl;
 	private AdminLoginPO AdminLoginPage;
 	private AdminDashboardPO AdminDashboardPage;
 	private AdminPostSeachPO AdminPostSeachPage;
 	
-	
-
 
 	@Parameters({ "browser", "url"})
 	@BeforeClass 
 	public void beforeClass(String browserName, String adminUrl) {
-		driver = getBrowserDriver(browserName, adminUrl);
+		driver = getBrowserDriverUrl(browserName, adminUrl);
 		log.info("Pre - Step_01: Input username into Admin login page");
 		AdminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 		AdminLoginPage.inputAdminUserName(adminUsername);
