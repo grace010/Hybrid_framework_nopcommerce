@@ -76,5 +76,8 @@
 	<classpathentry kind="lib" path="libOwner/mockito-core-2.15.0.jar"/>
 	<classpathentry kind="lib" path="libOwner/owner-1.0.10.jar"/>
 	<classpathentry kind="lib" path="javaTester/lombok-1.18.20.jar"/>
+	<classpathentry kind="lib" path="libFaker/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="libFaker/javafaker-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libFaker/snakeyaml-1.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
