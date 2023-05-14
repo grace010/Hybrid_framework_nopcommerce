@@ -143,8 +143,9 @@ public class BasePage {
 		By by = null;
 		if (locatorType.startsWith("id=")) {
 			by = By.id(locatorType.substring(3));
-		} else if(locatorType.startsWith("class=")) {
-			by = By.className(locatorType.substring(3));
+		}
+		else if(locatorType.startsWith("class=")) {
+			by = By.className(locatorType.substring(6));
 		}
 		else if(locatorType.startsWith("name=")) {
 			by = By.name(locatorType.substring(5));

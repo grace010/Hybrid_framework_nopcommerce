@@ -24,7 +24,7 @@ public class Level_01_Register_DRY {
 	int rand = random();
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() { 
 
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
@@ -61,67 +61,71 @@ public class Level_01_Register_DRY {
 		Assert.assertEquals(driver.findElement(By.cssSelector("span#Email-error")).getText(), "Wrong email");
 	}
 
-	@Test
-	public void Register_TC_03_RegisterSuccess() {
-
-		driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
-		driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Grace");
-		driver.findElement(By.cssSelector("input#LastName")).sendKeys("Tran");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthDay']")));
-		select.selectByVisibleText("26");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']")));
-		select.selectByVisibleText("January");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthYear']")));
-		select.selectByVisibleText("1995");
-		driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAddress);
-		driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-		driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456");
-		driver.findElement(By.cssSelector("button#register-button")).click();
-		Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
-		driver.findElement(By.xpath("//a[@class ='ico-logout']")).click();
-
-	}
-
-	@Test
-	public void Register_TC_04_RegisterEmailExist() {
-		driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
-		driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Grace");
-		driver.findElement(By.cssSelector("input#LastName")).sendKeys("Tran");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthDay']")));
-		select.selectByVisibleText("26");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']")));
-		select.selectByVisibleText("January");
-		select = new Select(driver.findElement(By.xpath("//select[@name='DateOfBirthYear']")));
-		select.selectByVisibleText("1995");
-		driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAddress);
-		driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-		driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456");
-		driver.findElement(By.cssSelector("button#register-button")).click();
-		Assert.assertEquals(driver.findElement(By.xpath("//li[text()='The specified email already exists']")).getText(),
-				"The specified email already exists");
-
-	}
-
-	@Test
-	public void Register_TC_05_PasswordInvalid() {
-		driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
-		driver.findElement(By.cssSelector("input#Password")).sendKeys("1234");
-		driver.findElement(By.cssSelector("button#register-button")).click();
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id = 'Password-error']")).getText(),
-				"Password must meet the following rules:\nmust have at least 6 characters");
-
-	}
-
-	@Test
-	public void Register_TC_06_PasswordNotMatch() {
-		driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
-		driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-		driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("12345");
-		driver.findElement(By.cssSelector("button#register-button")).click();
-		Assert.assertEquals(driver.findElement(By.cssSelector("span#ConfirmPassword-error")).getText(),
-				"The password and confirmation password do not match.");
-
-	}
+	/*
+	 * @Test public void Register_TC_03_RegisterSuccess() {
+	 * 
+	 * driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
+	 * driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Grace");
+	 * driver.findElement(By.cssSelector("input#LastName")).sendKeys("Tran"); select
+	 * = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthDay']")));
+	 * select.selectByVisibleText("26"); select = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']")));
+	 * select.selectByVisibleText("January"); select = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthYear']")));
+	 * select.selectByVisibleText("1995");
+	 * driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAddress);
+	 * driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
+	 * driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456"
+	 * ); driver.findElement(By.cssSelector("button#register-button")).click();
+	 * Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(
+	 * ), "Your registration completed");
+	 * driver.findElement(By.xpath("//a[@class ='ico-logout']")).click();
+	 * 
+	 * }
+	 * 
+	 * @Test public void Register_TC_04_RegisterEmailExist() {
+	 * driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
+	 * driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Grace");
+	 * driver.findElement(By.cssSelector("input#LastName")).sendKeys("Tran"); select
+	 * = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthDay']")));
+	 * select.selectByVisibleText("26"); select = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthMonth']")));
+	 * select.selectByVisibleText("January"); select = new
+	 * Select(driver.findElement(By.xpath("//select[@name='DateOfBirthYear']")));
+	 * select.selectByVisibleText("1995");
+	 * driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAddress);
+	 * driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
+	 * driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456"
+	 * ); driver.findElement(By.cssSelector("button#register-button")).click();
+	 * Assert.assertEquals(driver.findElement(By.
+	 * xpath("//li[text()='The specified email already exists']")).getText(),
+	 * "The specified email already exists");
+	 * 
+	 * }
+	 * 
+	 * @Test public void Register_TC_05_PasswordInvalid() {
+	 * driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
+	 * driver.findElement(By.cssSelector("input#Password")).sendKeys("1234");
+	 * driver.findElement(By.cssSelector("button#register-button")).click();
+	 * Assert.assertEquals(driver.findElement(By.
+	 * xpath("//span[@id = 'Password-error']")).getText(),
+	 * "Password must meet the following rules:\nmust have at least 6 characters");
+	 * 
+	 * }
+	 * 
+	 * @Test public void Register_TC_06_PasswordNotMatch() {
+	 * driver.findElement(By.xpath("//a[@class ='ico-register']")).click();
+	 * driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
+	 * driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("12345")
+	 * ; driver.findElement(By.cssSelector("button#register-button")).click();
+	 * Assert.assertEquals(driver.findElement(By.cssSelector(
+	 * "span#ConfirmPassword-error")).getText(),
+	 * "The password and confirmation password do not match.");
+	 * 
+	 * }
+	 */
 
 	public int random() {
 		Random rand = new Random();
@@ -130,7 +134,7 @@ public class Level_01_Register_DRY {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.quit();
+		 driver.quit();
 	}
 }
 

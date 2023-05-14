@@ -1,0 +1,1 @@
+{"uuid":"bc726b29-47b7-490e-ac29-9008c4eb2800","name":"com.nopcommerce.user.execise2","children":["cbe41ad5-2205-44e9-a8fd-337f5f691a1e"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681963342264,"stop":1681963344964}],"afters":[],"links":[],"start":1681963342254,"stop":1681963355172}
